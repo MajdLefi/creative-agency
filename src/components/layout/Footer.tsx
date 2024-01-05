@@ -10,6 +10,17 @@ export default function Footer() {
                         </div>
 
                         <div className="col-span-1">
+                            <h4 className="font-semibold text-gray-100">Company</h4>
+
+                            <div className="mt-3 grid space-y-3">
+                                <p><a className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/about-us">About us</a></p>
+                                <p><a className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/services">Services</a></p>
+                                <p><a className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/contact">Contact</a> <span className="inline ms-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-lg">We&#39;re hiring</span></p>
+                                {/* <p><a className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Customers</a></p> */}
+                            </div>
+                        </div>
+
+                        <div className="col-span-1">
                             <h4 className="font-semibold text-gray-100">Product</h4>
 
                             <div className="mt-3 grid space-y-3">
@@ -19,16 +30,6 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-span-1">
-                            <h4 className="font-semibold text-gray-100">Company</h4>
-
-                            <div className="mt-3 grid space-y-3">
-                                <p><a className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">About us</a></p>
-                                <p><a className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Blog</a></p>
-                                <p><a className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Careers</a> <span className="inline ms-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-lg">We're hiring</span></p>
-                                <p><a className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Customers</a></p>
-                            </div>
-                        </div>
 
                         <div className="col-span-2">
                             <h4 className="font-semibold text-gray-100">Stay up to date</h4>
