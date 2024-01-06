@@ -14,23 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <AnimatePresence mode="wait">
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-
-      <Script id="google-analytics-script" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-          page_path: window.location.pathname,
-          });
-    `}
-      </Script>
       <Script src="../../node_modules/preline/dist/preline.js" />
-      {/* <motion.div key={router.pathname}> */}
+      <motion.div key={router.pathname}>
         <Component {...pageProps} />
         <motion.div
           className="slide-in"
@@ -48,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
         </motion.div>
-      {/* </motion.div> */}
+      </motion.div>
     </AnimatePresence>
   )
 }
