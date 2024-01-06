@@ -16,6 +16,25 @@
   } */
 }
 
+.slide-in {
+  position: absolute;
+  top : 0 ;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+}
+.slide-out {
+  position: absolute;
+  top : 0 ;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: top;
+}
+
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
